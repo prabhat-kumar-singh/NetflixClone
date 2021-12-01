@@ -1,0 +1,85 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #00010a;
+  color: #fff;
+  min-width: 900px;
+  font-family: sans-serif;
+}
+
+body .signin-container {
+  width: 100%;
+  height: 100%;
+}
+
+body .signin-container .logo {
+  height: 15%;
+  margin: 20px 0px;
+}
+
+body .signin-container .content {
+  background-color: #00010a;
+  border: 2px solid #fff;
+  width: 30%;
+  height: 80vh;
+  margin: auto;
+  padding: 10px 30px;
+}
+
+body .signin-container .content .content-val {
+  width: 95%;
+  margin: 0px auto;
+  background-color: #00010a;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+body .signin-container .content .content-val h1 {
+  font-size: 2.3rem;
+}
+
+body .signin-container .content .content-val .error {
+  padding: 5px 2px;
+  background-color: #E8F0FE;
+  width: 100%;
+  color: #00010a;
+}
+
+body .signin-container .content .content-val form input {
+  width: 100%;
+  height: 35px;
+  background-color: #E8F0FE;
+  border-radius: 5px;
+  border: 1px solid #E8F0FE;
+  margin: 5px 0px;
+  padding: 3px;
+}
+
+body .signin-container .content .content-val form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #F40612;
+  border: 1px solid #F40612;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+body .signin-container .content .content-val .help {
+  margin: 5px 0px;
+  color: #666666;
+}
+
+body .signin-container .content .content-val .help .help-link {
+  float: right;
+  text-decoration: none;
+  color: #666666;
+}
+
+body .signin-container .content .content-val p {
+  color: #666;
+}
+/*# sourceMappingURL=SignStyle.css.map */

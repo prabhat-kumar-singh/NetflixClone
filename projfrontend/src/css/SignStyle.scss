@@ -1,0 +1,95 @@
+$primary-color: #fff;
+$secondary-color: #00010a;
+$netflix-color: #F40612;
+
+@mixin flexcenter($j-content, $direction: row){
+    display: flex;
+    justify-content: $j-content;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: $secondary-color;
+    color: $primary-color;
+    min-width: 900px;
+    font-family: sans-serif;
+
+    .signin-container{
+        width: 100%;
+        height: 100%;
+
+        .logo{
+            height: 15%;
+            margin: 20px 0px;
+        }
+
+        .content{
+            background-color: $secondary-color;
+            border: 2px solid $primary-color; 
+            width: 30%;
+            height: 80vh;
+            margin: auto;
+            padding: 10px 30px;
+
+            .content-val{
+                width: 95%;
+                margin: 0px auto;
+                background-color: $secondary-color;
+                backdrop-filter: blur(12px);
+
+                h1{
+                    font-size: 2.3rem;
+                }         
+                
+                .error{
+                    padding: 5px 2px;
+                    background-color: #E8F0FE;
+                    width: 100%;
+                    color: $secondary-color;
+                }
+
+                form{
+                    input{
+                        width: 100%;
+                        height: 35px;
+                        background-color: #E8F0FE;
+                        border-radius: 5px;
+                        border: 1px solid #E8F0FE;
+                        margin: 5px 0px;
+                        padding: 3px;
+                    }
+
+                    button{
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 5px;
+                        background-color: $netflix-color;
+                        border: 1px solid $netflix-color;
+                        color: $primary-color;
+                        font-size: 1rem;
+                        margin-top: 30px;
+                    }
+                }
+
+                .help{
+                    margin: 5px 0px;
+                    color: #666666;
+                    .help-link{
+                        float: right;
+                        text-decoration: none;
+                        color: #666666;
+                    }
+                }
+
+                p{
+                    color: #666;
+                }
+            }
+        }
+
+    }
+}

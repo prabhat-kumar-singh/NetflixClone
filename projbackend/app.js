@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 const authRoutes = require("./routes/authRoutes");
 
@@ -20,6 +21,7 @@ mongoose.connect("mongodb://localhost:27017/netflix", {useNewUrlParser: true, us
 
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(cors());
 
 //routes
 app.use("/api", authRoutes);

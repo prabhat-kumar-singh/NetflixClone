@@ -1,0 +1,306 @@
+body {
+  margin: 0px;
+  padding: 0px 30px 0 30px;
+  background-color: #00010a;
+  color: #fff;
+  min-width: 900px;
+}
+
+body .container {
+  font-family: Arial, sans-serif;
+}
+
+body .container .frontpage {
+  height: 100vh;
+}
+
+body .container .frontpage nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15%;
+}
+
+body .container .frontpage nav .nav-right {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .frontpage nav .nav-right .lang select {
+  padding: 8px;
+}
+
+body .container .frontpage nav .nav-right .btn {
+  height: 25px;
+  width: 35%;
+  color: #fff;
+  background-color: #F40612;
+  border: 1px solid #F40612;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+body .container .frontpage .container-val {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 90%;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .container .frontpage .container-val p:nth-child(1) {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 5px auto;
+}
+
+body .container .frontpage .container-val p:nth-child(2) {
+  font-size: 1.5rem;
+  margin: 5px auto;
+}
+
+body .container .frontpage .container-val p:nth-child(3) {
+  font-size: 1rem;
+}
+
+body .container .frontpage .container-val form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .container .frontpage .container-val form input {
+  width: 70%;
+  height: 60px;
+  padding: 0px 5px;
+  font-size: 1rem;
+}
+
+body .container .frontpage .container-val form button {
+  width: 30%;
+  background-color: #F40612;
+  color: #fff;
+  border: 1px solid #F40612;
+  font-size: 1.3rem;
+  height: 66px;
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+body .container section div {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+body .container section div h1 {
+  font-size: 3rem;
+}
+
+body .container section div p {
+  font-size: 1.5rem;
+}
+
+body .container .faq h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body .container .faq .list {
+  width: 50%;
+  margin: 0px auto;
+}
+
+body .container .faq .list details {
+  background-color: #303030;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+body .container .faq .list details summary {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+body .container .faq .list details summary::-webkit-details-marker {
+  display: none;
+}
+
+body .container .faq .list details summary::after {
+  float: right;
+  content: '+';
+}
+
+body .container .faq .list details[open] summary::after {
+  float: right;
+  content: 'x';
+}
+
+body .container .form-details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .form-details p {
+  font-size: 1rem;
+}
+
+body .container .form-details form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .form-details form input {
+  width: 70%;
+  height: 60px;
+  padding: 0px 5px;
+  font-size: 1rem;
+}
+
+body .container .form-details form button {
+  width: 30%;
+  background-color: #F40612;
+  color: #fff;
+  border: 1px solid #F40612;
+  font-size: 1.3rem;
+  height: 66px;
+}
+
+body .container .footer {
+  color: #666666;
+  width: 100%;
+  text-align: center;
+}
+
+body .container .footer .content {
+  text-align: center;
+  margin: 0px auto;
+  font-size: 12px;
+  width: 70%;
+}
+
+body .container .footer .content .content-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0px auto;
+}
+
+body .container .footer .content .content-items .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 5px;
+  margin: 0px 10px;
+}
+/*# sourceMappingURL=App.css.map */

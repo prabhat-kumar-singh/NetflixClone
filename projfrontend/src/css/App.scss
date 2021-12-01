@@ -1,0 +1,214 @@
+$primary-color: #fff;
+$secondary-color: #00010a;
+$netflix-color: #F40612;
+
+
+@mixin flexCenter($content-align, $flex-direction: row){
+    display: flex;
+    justify-content: $content-align;
+    flex-direction: $flex-direction;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+    padding: 0px 30px 0 30px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    min-width: 900px;
+
+    .container{
+        font-family: Arial, sans-serif;
+
+        .frontpage{
+            height: 100vh;
+
+            nav{
+                @include flexCenter(space-between);
+                height: 15%;
+
+                .nav-right{
+                    width: 15%;
+                    height: 100%;
+                    @include flexCenter(space-evenly);
+
+                    .lang select{
+                        padding: 8px;
+                    }
+
+                    .btn{
+                        height: 25px;
+                        width: 35%;
+                        color: $primary-color;
+                        background-color: $netflix-color;
+                        border: 1px solid $netflix-color;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 5px 0px;
+                    }
+                }
+
+            }
+
+            .container-val{
+                @include flexCenter(center, column);
+                width: 50%;
+                height: 90%;
+                color: $primary-color;
+                margin: 0 auto;
+                text-align: center;
+
+                p:nth-child(1){
+                    font-size: 4rem;
+                    font-weight: bold;
+                    margin: 5px auto;
+                }
+
+                p:nth-child(2){
+                    font-size: 1.5rem;
+                    margin: 5px auto;
+                }
+
+                p:nth-child(3){
+                    font-size: 1rem;
+                }
+
+                form{
+                    @include flexCenter(center);
+                    width: 100%;
+                    input{
+                        width: 70%;
+                        height: 60px;
+                        padding: 0px 5px;
+                        font-size: 1rem;
+                    }
+
+                    button{
+                        width: 30%;
+                        background-color: $netflix-color;
+                        color: $primary-color;
+                        border: 1px solid $netflix-color;
+                        font-size: 1.3rem;
+                        height: 66px;
+                    }
+                }
+            }
+
+        }
+
+
+        section{
+            @include flexCenter(center);
+            margin: 20px 0px;
+            div{
+                width: 50%;
+                padding: 10px 20px;
+
+                h1{
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+
+
+        }
+
+        .faq{
+            h1{
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            .list{
+                width: 50%;
+                margin: 0px auto;
+
+                details{
+                    background-color: #303030;
+                    margin: 5px;
+                    padding: 10px;
+                    font-size: 1.5rem;
+
+                    summary{
+                        list-style: none;
+                        margin: 10px 0px;
+                    }
+
+                    summary::-webkit-details-marker{
+                        display: none;
+                    }
+
+                    summary::after{
+                        float: right;
+                        content: '+';
+                    }
+                }
+
+                details[open] summary::after{
+                    float: right;
+                    content: 'x';
+            
+                }
+            }
+
+        }
+
+        .form-details{
+            width: 100%;
+            @include flexCenter(center, column);
+            p{
+                font-size: 1rem;
+            }
+
+            form{
+                @include flexCenter(center);
+                input{
+                    width: 70%;
+                    height: 60px;
+                    padding: 0px 5px;
+                    font-size: 1rem;
+                }
+
+                button{
+                    width: 30%;
+                    background-color: $netflix-color;
+                    color: $primary-color;
+                    border: 1px solid $netflix-color;
+                    font-size: 1.3rem;
+                    height: 66px;
+                }
+            }
+        }
+
+        .footer{
+            color: #666666;
+            width: 100%;
+            text-align: center;
+
+            .content{
+                text-align: center;
+                margin: 0px auto;
+                font-size: 12px;
+                width: 70%;
+
+                .content-items{
+                    @include flexCenter(space-between);
+                    width: 50%;
+                    margin: 0px auto;
+
+                    .items{
+                        @include flexCenter(space-between);
+                        width: 50%;
+                        padding: 5px;
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

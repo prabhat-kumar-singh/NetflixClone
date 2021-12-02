@@ -48,6 +48,17 @@ body{
                         text-align: center;
                         padding: 5px 0px;
                     }
+
+                    button{
+                        height: 35px;
+                        width: 35%;
+                        color: $primary-color;
+                        background-color: $netflix-color;
+                        border: 1px solid $netflix-color;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-align: center;
+                    }
                 }
 
             }

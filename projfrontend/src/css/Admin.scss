@@ -1,0 +1,40 @@
+body{
+    width: 100%;
+
+    .admin-container{
+        width: 80%;
+        height: 60vh;
+        margin: 20px auto;
+
+        .admin-container-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            .tab, .tab-value{
+                height: 100%;
+                border: 1px solid #666;
+                border-radius: 5px;
+                margin: 0px 10px;
+                padding: 5px;
+            }
+            .tab{
+                width: 20%;
+
+                .nav-link{
+                    text-decoration: none;
+                    color: #666;
+                    font-size: 1.3rem;
+                    padding: 5px;
+                    margin: 10px auto;
+                }
+
+            }
+
+            .tab-value{
+                width: 80%;
+            }
+        }
+    }
+}

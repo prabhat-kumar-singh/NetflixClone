@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+}
+
+body .admin-container {
+  width: 80%;
+  height: 60vh;
+  margin: 20px auto;
+}
+
+body .admin-container .admin-container-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body .admin-container .admin-container-item .tab, body .admin-container .admin-container-item .tab-value {
+  height: 100%;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+body .admin-container .admin-container-item .tab {
+  width: 20%;
+}
+
+body .admin-container .admin-container-item .tab .nav-link {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.3rem;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+body .admin-container .admin-container-item .tab-value {
+  width: 80%;
+}
+/*# sourceMappingURL=Admin.css.map */

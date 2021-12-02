@@ -66,6 +66,17 @@ body .container .frontpage nav .nav-right .btn {
   padding: 5px 0px;
 }
 
+body .container .frontpage nav .nav-right button {
+  height: 35px;
+  width: 35%;
+  color: #fff;
+  background-color: #F40612;
+  border: 1px solid #F40612;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
 body .container .frontpage .container-val {
   display: -webkit-box;
   display: -ms-flexbox;

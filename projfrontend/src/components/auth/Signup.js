@@ -1,11 +1,12 @@
 import React, {useState} from "react"
 import { Link, useNavigate} from "react-router-dom";
 import "../../css/SignStyle.css";
-import { authenticate, signin } from "../../controllers/auth";
+import { authenticate, signup } from "../../controllers/auth";
 
-const Signin = () => {
+const Signup = () => {
 
     const [user, setUser] = useState({
+        name: "",
         email: "",
         password: "",
         error: "",
@@ -20,8 +21,8 @@ const Signin = () => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        const {email, password} = user;
-        signin({email, password})
+        const {name, email, password} = user;
+        signup({name, email, password})
         .then(data => {
             if(data.error){
                 setUser({...user, error: data.error});
@@ -37,7 +38,7 @@ const Signin = () => {
     }
 
     if(user.redirect){
-        navigate("/main");
+        navigate("/signin");
         return ""
     }else{
         return(
@@ -47,13 +48,15 @@ const Signin = () => {
                 </div>
                 <div className = "content">
                     <div className = "content-val">
-                        <h1>Sign In</h1>
+                        <h1>Sign Up</h1>
 
                         <div className = {user.error ? "error": ""}>
                             {user.error ? `Error: ${user.error}` : ""}
                         </div>
                         
                         <form>
+                            <input type = "text" placeholder = "Full name" onChange = {handleChange("name")}/>
+                            <br />
                             <input type = "text" placeholder = "Email address or phone number" onChange = {handleChange("email")}/>
                             <br />
                             <input type = "password" placeholder = "password" onChange = {handleChange("password")} />
@@ -61,7 +64,7 @@ const Signin = () => {
                             <button 
                             type = "submit"
                             onClick = {onSubmit}
-                            >Sign In</button>
+                            >Sign Up</button>
                         </form>
                         <div className = "help">
                             <input type = "checkbox" value = "rememberMe" />Remember me
@@ -71,7 +74,7 @@ const Signin = () => {
                         <div className = "social-signin">
                             <p>Login with facebook</p>
                         </div>
-                        <p>New to Netflix? <Link to = "/signup" style = {{color: "white", textDecoration: "none"}}>Sign up now.</Link></p>
+                        <p>Already have an account? <Link to = "/signin" style = {{color: "white", textDecoration: "none"}}>Sign in now.</Link></p>
                         <p>Click here to <Link to = "/" className = "learn-more">learn more</Link></p>
                     </div>
                 </div>
@@ -80,4 +83,4 @@ const Signin = () => {
     }
 }
 
-export default Signin;
+export default Signup;
